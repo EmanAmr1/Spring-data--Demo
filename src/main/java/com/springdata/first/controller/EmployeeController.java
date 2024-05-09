@@ -23,6 +23,12 @@ public class EmployeeController {
         return empService.save(employee);
     }
 
+    @PostMapping("/update-emp")
+    public Employee update(@RequestBody Employee employee){
+        return empService.updateEmp(employee);
+    }
+
+
     @DeleteMapping("/delete-emp")
     public void delete(@RequestParam Integer id){
           empService.deleteEmp(id);

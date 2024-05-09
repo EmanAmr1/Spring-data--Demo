@@ -35,4 +35,8 @@ public class EmpService {
          this.empRepo.deleteById(id);
     }
 
+    public Employee updateEmp(Employee employee){
+        return  this.empRepo.save(employee);
+
+    }
 }
