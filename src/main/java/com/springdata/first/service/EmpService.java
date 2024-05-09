@@ -31,4 +31,8 @@ public class EmpService {
 
     }
 
+    public void deleteEmp(Integer id){
+         this.empRepo.deleteById(id);
+    }
+
 }
